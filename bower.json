@@ -1,0 +1,22 @@
+{
+  "name": "joinery",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "IM"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/IhorMoroz/Joinery",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+],
+"devDependencies":{
+    "bootstrap" : "latest",
+    "jquery" : "latest"
+}
+}
