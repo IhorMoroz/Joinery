@@ -17,6 +17,7 @@
 ],
 "devDependencies":{
     "bootstrap" : "latest",
-    "jquery" : "latest"
+    "jquery" : "1.9.1",
+    "reset-css" : "latest"
 }
 }

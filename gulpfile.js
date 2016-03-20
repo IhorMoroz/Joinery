@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     minifyCss = require('gulp-minify-css'),
     concatCss = require('gulp-concat-css'),
     concat = require('gulp-concat'),
+    autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass');
 
 gulp.task('serve', ['sass', 'html', 'js'], function() {
@@ -23,6 +24,7 @@ gulp.task('sass', function(){
     gulp.src("dev/scss/*.scss")
     .pipe(sass())
     .pipe(concatCss("main.css"))
+    .pipe(autoprefixer({browsers: ['last 5 versions']}))
     .pipe(minifyCss())
     .pipe(gulp.dest("app/css"))
     .pipe(bs.stream());

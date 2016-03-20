@@ -3,9 +3,136 @@
     <head>
         <meta charset="utf-8">
         <title>Joinery</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery.min.js" charset="utf-8"></script>
+        <script src="js/jquery-migrate.min.js" charset="utf-8"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRo7CUvaVaWx6U8cApoFs7htR7UruSWks&callback=initMap" async defer></script>
+        <script src="js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="js/main.js" charset="utf-8"></script>
     </head>
     <body>
-        <h1>hello world</h1>
+        <header class="absBlock backHeadeer">
+            <div class="siteBlock headerContent">
+                <nav class="mainMenu">
+                    <div class="boxNameSite">
+                        <a href="/"><h1>KlymWood</h1></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Наші вироби</a></li>
+                        <li><a href="#">Ціни</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <!-- slider -->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h3>Ми відкрились</h3>
+                        <p>Ми працюємо заради вас</p>
+                    </div>
+                    <div class="item">
+                        <h3>у нас найкращі вироби</h3>
+                        <p>За два дні на gmail приходить повідомлення з бібліотеки: ваша книжка чекає на вас у такому-то відділені назва і адреса "нашої" районної бібліотеки, з такого-то числа. Треба забрати її протягом 5 днів, інакше - невеличкий штраф за кожну добу запізнення.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end slider -->
+            </div>
+        </header>
+        <div class="backAbout absBlock">
+            <div class="siteBlock aboutUs">
+                <h3 class="titleBox">Про нас</h3>
+                <div class="img">
+                    <img src="img/app/about.jpg" alt="">
+                </div>
+                <div class="text">
+                    Навесні природа пробуджується від зимового сну. Поступово сходить сніг, та земля недовго лишається чорною та голою. Тільки-но теплішає, звідусіль починає пробиватися молода яскраво-зелена трава, на деревах набухають бруньки та згодом перетворюються на маленькі листочки. На водоймах швидко тане лід. Крига гойдається на воді, доки зовсім не перетвориться на неї. Весняне небо зазвичай чисте, блакитне, і по ньому швидко пливуть сніжно-білі  хмаринки, схожі на тварин - лева, черепаху, різні предмети, навіть обличчя людей.
+ квіточках стоять дерева, аж здається, що вони закутані в легкий пахучий туман. Особливо мені до душі, коли розквітають персики та груші – їхні квітки рожеві, і вони виділяються з-поміж інших дерев. Звідусіль лунає спів та щебет птахів, які повернулися з далеких країв і тепер, здається, розповідають одне одному про свої пригоди. Навесні все навколо наповнюється кольорами, звуками, запахами, і мені стає весело на душі.
+                </div>
+            </div>
+        </div>
+        <div class="backWorks absBlock">
+            <div class="ourWorks siteBlock">
+                <h3 class="titleBox">Наші вироби</h3>
+                <div class="boxwork">
+                    <div class="about">
+                        <p>Зручний cтіл та стільці</p>
+                        <span>Матеріал - Дуб</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="boxwork">
+                    <div class="about">
+                        <p>Зручний cтіл та стільці</p>
+                        <span>Матеріал - Дуб</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="boxwork">
+                    <div class="about">
+                        <p>Зручний cтіл та стільці</p>
+                        <span>Матеріал - Дуб</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="boxwork">
+                    <div class="about">
+                        <p>Зручний cтіл та стільці</p>
+                        <span>Матеріал - Дуб</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="boxwork">
+                    <div class="about">
+                        <p>Зручний cтіл та стільці</p>
+                        <span>Матеріал - Дуб</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="boxwork">
+                    <div class="about">
+                        <p>Зручний cтіл та стільці</p>
+                        <span>Матеріал - Дуб</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="boxwork">
+                    <div class="about">
+                        <p>Зручний cтіл та стільці</p>
+                        <span>Матеріал - Дуб</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="boxwork">
+                    <div class="about">
+                        <p>Зручний cтіл та стільці</p>
+                        <span>Матеріал - Дуб</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="backFootContent absBlock">
+                <div class="boxContact siteBlock">
+
+                </div>
+            </div>
+            <div id="map">
+
+            </div>
+        </footer>
     </body>
 </html>

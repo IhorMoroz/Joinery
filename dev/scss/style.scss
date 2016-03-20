@@ -1,5 +1,215 @@
-$color: green;
+@import "../../bower_components/reset-css/_reset.scss";
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC&subset=latin,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic-ext);
 
-body{
-    background-color: $color;
+$Popins:'Poppins', sans-serif;
+$PlayF:'Playfair Display SC', serif;
+$Forum:'Forum', cursive;
+
+$widthSite:980px;
+$widthHeaderContent:400px;
+
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.absBlock{
+    position: relative;
+    width: 100%;
+    min-width: $widthSite;
+    height: auto;
+}
+.siteBlock{
+    margin:0 auto;
+    width: $widthSite;
+    min-width: $widthSite;
+    height: auto;
+}
+.titleBox{
+    font-size: 28px;
+    text-align: center;
+    color:#605142;
+    font-family: $PlayF;
+}
+
+// MAin slider
+#carousel-example-generic{
+    height: 350px;
+    .carousel-indicators li.active{
+        background-color: #D37C38;
+    }
+    h3{
+        @extend .titleBox;
+        margin:30px 0px 20px 0px;
+    }
+    p{
+        margin:0 auto;
+        width:400px;
+        color:#000;
+        text-shadow:  -1px -1px 1px #fff;
+        text-align: center;
+        font-family: $Popins;
+    }
+}
+// end main slider
+
+.backHeadeer{
+    background: url("../img/app/back_wood.jpg");
+    background-size:100% auto;
+    .headerContent{
+        height: $widthHeaderContent;
+        // border:1px solid red;
+        .mainMenu{
+            @include clearfix();
+            // border:1px solid red;
+            .boxNameSite{
+                float:left;
+                a{
+                    text-decoration: none;
+                    color:#605142;
+                    h1{
+                        font-family: 'Amatic SC';
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 48px;
+                    }
+                }
+            }
+            ul{
+                float:right;
+                li{
+                    display: inline-block;
+                    margin:0px 10px;
+                    a{
+                        font-family: $Forum;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 45px;
+                        color:#605142;
+                        transition: all .3s;
+                        &:hover{
+                            color:#D37C38;
+                            text-decoration: none;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.backAbout{
+    background: url("../img/app/back_white.png");
+    .aboutUs{
+        height: auto;
+        padding: 20px 0px;
+        h3{
+            padding:10px 0px 30px;
+        }
+        .img{
+            display: inline-block;
+            vertical-align: middle;
+            width: 460px;
+            height: 250px;
+            overflow: hidden;
+            border:4px solid #fff;
+            box-shadow: 0 0 1em #000;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .text{
+            margin:0px 0px 0px 20px;
+            padding: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 470px;
+            height: auto;
+            font-size: 17px;
+            line-height: 25px;
+            text-align: center;
+            font-family: $Popins;
+        }
+    }
+}
+.backWorks{
+    background: url("../img/app/wood.jpg");
+    .ourWorks{
+        height: 600px;
+        padding:20px 0px;
+        font-size: 0;
+        h3{
+            margin:0px 0px 20px 0px;
+        }
+        .boxwork{
+            position: relative;
+            display: inline-block;
+            width: 244px;
+            height: 244px;
+            overflow: hidden;
+            .about{
+                transition: all .3s;
+                position: absolute;
+                width: 180px;
+                height: 180px;
+                top:13%;
+                left:13%;
+                border-radius: 5px;
+                background: url("../img/app/back_op.png");
+                p{
+                    padding:30% 5px 0px;
+                    font-family: $Forum;
+                    text-align: center;
+                    font-size: 18px;
+                    color:white;
+                    line-height: 20px;
+                }
+                span{
+                    display: block;
+                    text-align: center;
+                    font-family: $Forum;
+                    text-align: center;
+                    font-size: 18px;
+                    color:white;
+                }
+            }
+            &:hover{
+                .about{
+                    top:-100%;
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    .backFootContent{
+        z-index: 100;
+        background: url("../img/app/back_op.png");
+        position: absolute;
+        height: 300px;
+        .boxContact{
+            border:1px solid red;
+            height: 300px;
+        }
+    }
+    #map{
+        width: 100%;
+        height: 500px;
+    }
 }
