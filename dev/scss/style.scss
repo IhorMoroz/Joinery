@@ -144,7 +144,7 @@ $widthHeaderContent:400px;
 .backWorks{
     background: url("../img/app/wood.jpg");
     .ourWorks{
-        height: 600px;
+        height: auto;
         padding:20px 0px;
         font-size: 0;
         h3{
@@ -203,9 +203,45 @@ footer{
         background: url("../img/app/back_op.png");
         position: absolute;
         height: 300px;
-        .boxContact{
-            border:1px solid red;
+        .boxContent{
+            // border:1px solid red;
+            h3{
+                font-size: 28px;
+                text-align: center;
+                color:#fff;
+                font-family: $PlayF;
+                padding: 10px 0px;
+            }
             height: 300px;
+            .boxContacts{
+                width: 100%;
+                height: 280px;
+                overflow: hidden;
+                // border:1px solid red;
+                .box{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 240px;
+                    height: 235px;
+                    // border:1px solid red;
+                    color:#fff;
+                    h4{
+                        padding: 10px 0px;
+                        text-align: center;
+                        font-family: $PlayF;
+                    }
+                    p{
+                        font-size: 20px;
+                        font-family: $Forum;
+                        text-align: center;
+                    }
+                }
+            }
+            .copy{
+                text-align: center;
+                color:#fff;
+                // border:1px solid red;
+            }
         }
     }
     #map{
