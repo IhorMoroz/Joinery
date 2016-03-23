@@ -9,7 +9,7 @@ $PlayF:'Playfair Display SC', serif;
 $Forum:'Forum', cursive;
 
 $widthSite:980px;
-$widthHeaderContent:400px;
+$widthHeaderContent:600px;
 
 
 @mixin clearfix() {
@@ -39,68 +39,71 @@ $widthHeaderContent:400px;
     color:#605142;
     font-family: $PlayF;
 }
-
-// MAin slider
-#carousel-example-generic{
-    height: 350px;
-    .carousel-indicators li.active{
-        background-color: #D37C38;
-    }
-    h3{
-        @extend .titleBox;
-        margin:30px 0px 20px 0px;
-    }
-    p{
-        margin:0 auto;
-        width:400px;
-        color:#000;
-        text-shadow:  -1px -1px 1px #fff;
-        text-align: center;
-        font-family: $Popins;
-    }
-}
-// end main slider
-
-.backHeadeer{
-    background: url("../img/app/back_wood.jpg");
-    background-size:100% auto;
-    .headerContent{
-        height: $widthHeaderContent;
-        // border:1px solid red;
-        .mainMenu{
-            @include clearfix();
-            // border:1px solid red;
-            .boxNameSite{
-                float:left;
+.backMenu{
+    background: #000;
+    position: fixed;
+    z-index: 101;
+    .mainMenu{
+        @include clearfix();
+        .boxNameSite{
+            float:left;
+            a{
+                text-decoration: none;
+                color:#fff;
+                h1{
+                    font-family: 'Amatic SC';
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 48px;
+                }
+            }
+        }
+        ul{
+            float:right;
+            li{
+                display: inline-block;
+                margin:0px 10px;
                 a{
-                    text-decoration: none;
-                    color:#605142;
-                    h1{
-                        font-family: 'Amatic SC';
-                        font-weight: bold;
-                        font-size: 32px;
-                        line-height: 48px;
+                    font-family: $Forum;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 45px;
+                    color:#fff;
+                    transition: all .3s;
+                    &:hover{
+                        color:#D37C38;
+                        text-decoration: none;
+                        transition: all .3s;
                     }
                 }
             }
-            ul{
-                float:right;
-                li{
+        }
+    }
+}
+.backHeadeer{
+    background: url("../img/app/back_op.png"),url("../img/app/back_wood.jpg"),;
+    background-size:100% auto;
+    .headerContent{
+        padding-top: 100px;
+        height: $widthHeaderContent;
+        #carousel-example-generic{
+            height: 400px;
+            .carousel-inner{
+                color:#fff;
+                text-align: center;
+                h3{
+                    margin-top:50px;
+                    font-size: 34px;
+                    font-family: $PlayF;
+                }
+                p{
                     display: inline-block;
-                    margin:0px 10px;
-                    a{
-                        font-family: $Forum;
-                        font-weight: bold;
-                        font-size: 20px;
-                        line-height: 45px;
-                        color:#605142;
-                        transition: all .3s;
-                        &:hover{
-                            color:#D37C38;
-                            text-decoration: none;
-                            transition: all .3s;
-                        }
-                    }
+                    height: 200px;
+                    overflow: hidden;
+                    margin-top:50px;
+                    text-align: center;
+                    font-size: 22px;
+                    font-family: $Forum;
                 }
             }
         }
