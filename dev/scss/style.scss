@@ -145,13 +145,14 @@ $widthHeaderContent:600px;
     }
 }
 .backWorks{
-    background: url("../img/app/wood.jpg");
+    background: url("../img/app/back.jpg");
     .ourWorks{
         height: auto;
         padding:20px 0px;
         font-size: 0;
         h3{
             margin:0px 0px 20px 0px;
+            color:#fff;
         }
         .boxwork{
             position: relative;
@@ -249,6 +250,7 @@ footer{
     }
     #map{
         width: 100%;
+        min-width: $widthSite;
         height: 500px;
     }
 }
