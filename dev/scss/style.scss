@@ -160,6 +160,7 @@ $widthHeaderContent:600px;
             width: 244px;
             height: 244px;
             overflow: hidden;
+            transition: all .5s;
             .about{
                 transition: all .3s;
                 position: absolute;
@@ -187,9 +188,12 @@ $widthHeaderContent:600px;
                 }
             }
             &:hover{
+                transition: all .5s;
                 .about{
                     top:-100%;
                 }
+                transform: scale(1.6, 1.6);
+                z-index:1000;
             }
             img{
                 width: 100%;
